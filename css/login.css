@@ -1,0 +1,37 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color : #000099;
+  }
+  
+  aside{
+    width : 40%;
+    display : inline-block;
+    padding-top : 10%;
+    padding-left : 40px;
+  }
+  
+  main {
+    width : 50%;
+    vertical-align : top;
+    display : inline-block;  
+    padding-top : 11%;
+  }
+  
+  aside img {
+    width : 95%;
+    border-radius: 9%;
+    padding-top : 1%;
+  }
+  main section hr {
+    size:100;
+    width:100;
+      
+  }
+  h1,h2,h3,h4{
+     color: #000099;  
+  }
+  p{
+    color: #525b57
+  }
+  
