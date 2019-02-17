@@ -1,3 +1,4 @@
+var channels = ["Sports","Shows","Movies","Pets"]
 var messages =[
     {
        "user":{
@@ -40,3 +41,25 @@ var messages =[
        }
     }
 ]
+/*
+let  d = new Date(1534885670000);
+let hours = d.getHours();
+let day = d.getDay();
+let year = d.getFullYear();
+
+//o prevent any jQuery code from running before the document is finished loading (is ready).
+$(document).ready(function(){
+
+    // jQuery methods go here...
+    
+  
+  });
+*/
+console.log(messages[0]["user"]["name"]);
+for( var message in messages){
+   for (var items in message){
+       console.log(typeof(items));
+       console.log(items);
+   }
+    
+}
