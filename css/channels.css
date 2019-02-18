@@ -35,8 +35,10 @@ main {
     width : 80%;
     vertical-align : top;
     display : inline-block;  
-
-
+	
+    padding : 10px 10px;	
+    height: 100%;
+    margin-top : 2.5rem;
   }
 
 * {
@@ -50,13 +52,6 @@ html, body {
 
 
 
-.main-section {
-    display :inline-block;
-    width : 85%;		
-    padding : 10px 10px;	
-    height: 100%;
-    margin-top : 2.5rem;
-}
 
 div {
     display :inline-block;
