@@ -1,18 +1,11 @@
-aside{
-    display: block;
-    background-color: #4D00A5;
-    width : 12%;
-    display : inline-block;
-    height: 100%;
-    
-}
-aside p{
+
+nav p{
     color: #C9C9CB;
     width: 100%;
     display: block;
     padding: 8px 16px;
 }
-aside h3{
+nav h3{
     color: #C9C9CB;
     width: 100%;
     height: 5%;
@@ -20,7 +13,16 @@ aside h3{
     text-align: center;
     padding: 8px 16px;
 }
-aside nav ul li a{
+nav{
+    
+    display: block;
+    background-color: #4D00A5;
+    width : 12%;
+    display : inline-block;
+    height: 100%;
+}
+
+ nav ul li a{
     color: #C9C9CB;
     width: 100%;
     display: block;
@@ -32,18 +34,31 @@ aside nav ul li a{
     text-align: center;
     color: white;
   }
-aside nav ul li a:hover{
+ nav ul li a:hover{
     background-color: #555;
     color: white;
 }
-aside nav ul{
+ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     width:100%;
 
 }
-
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    nav  {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    main {
+        width : 100%;
+        vertical-align : top;
+        display : inline-block;  
+        height: auto;
+      }
+  }
 main {
     width : 80%;
     vertical-align : top;
