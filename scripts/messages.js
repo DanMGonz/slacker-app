@@ -104,7 +104,7 @@ $( document ).ready(function() {
    $("#message").keydown(function(event){
       //If the user press enter on the text area box
        if ( event.which === 13 ) {
-           event.preventDefault( );
+            event.preventDefault( );
             let message = {
             "user": {
             "name": "Daniel",
