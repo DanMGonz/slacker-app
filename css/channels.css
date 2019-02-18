@@ -1,21 +1,36 @@
 aside{
-/*   color: #4D00A5;*/
     display: block;
     background-color: #4D00A5;
-    width : 10%;
+    width : 12%;
     display : inline-block;
     height: 100%;
     
 }
-aside nav ul a{
-    color: #FFFFFF
+aside nav ul li a{
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/*add active class to the current link*/
+.active {
+    text-align: center;
+    color: white;
+  }
+aside nav ul li a:hover{
+    background-color: #555;
+    color: white;
 }
 aside nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-   color: #ffffff
+    width:100%;
+
 }
+
 main {
     width : 80%;
     vertical-align : top;
