@@ -1,4 +1,34 @@
-let channels = ["Sports","Shows","Movies","Pets"]
+let channels = [
+   {
+      "option":{
+         "label":"Sports",
+         "link":""
+      }
+   },
+   {
+      "option":{
+         "label":"Shows",
+         "link":""
+      }
+   },
+   {
+      "option":{
+         "label":"Movies",
+         "link":""
+      }
+   },
+   {
+      "option":{
+         "label":"Pets",
+         "link":""
+      }
+   },
+   {
+      "option":{
+         "label":"others",
+         "link":""
+      }
+   }]
 let messages =[
     {
        "user":{
@@ -56,7 +86,29 @@ $(document).ready(function(){
   
   });
 */
+function createMenuOptions($menu){
+   //let $option = $("#menu").append($menu);
 
+   let $link = $('<a>',{
+      text: $menu.option.label,
+      title: $menu.option.label,
+      href: $menu.option.link
+  })
+
+   let $list = $("<li>").append($link);
+   return $list
+}
+function loadMenuOptions()
+{
+   renderMenu(channels)
+}
+function renderMenu( channels ) {
+   console.log ("Data: " ,  channels );
+   channels.forEach( ( channels ) => {
+       let $option = createMenuOptions( channels );
+       $("#menu").append( $option );
+   });
+}
 function createArticle( $message ) {
    let $article = $("<article>").addClass( "message-row");
    let $image = $("<img>").attr( "src" , $message.user.image );
@@ -100,6 +152,8 @@ function submitMessage( message ) {
 
 
 $( document ).ready(function() {
+
+   loadMenuOptions();
 
    $("#message").keydown(function(event){
       //If the user press enter on the text area box
