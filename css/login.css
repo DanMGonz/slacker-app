@@ -7,21 +7,19 @@ body {
   aside{
     width : 40%;
     display : inline-block;
-    padding-top : 10%;
-    padding-left : 40px;
   }
   
   main {
     width : 50%;
     vertical-align : top;
     display : inline-block;  
-    padding-top : 11%;
+
   }
   
   aside img {
     width : 95%;
     border-radius: 9%;
-    padding-top : 1%;
+    height: auto;
   }
   main section hr {
     size:100;
@@ -35,3 +33,15 @@ body {
     color: #525b57
   }
   
+  /*mobile only*/
+  @media only screen and (max-width: 768px) {
+    aside{
+      width: 100%;
+    }
+    main {
+      width: 100%;
+    }
+    aside img {
+      height: auto;
+    }
+  }
